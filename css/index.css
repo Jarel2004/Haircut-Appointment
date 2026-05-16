@@ -7,6 +7,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #b4b4b4;
     padding: 20px;
@@ -60,6 +64,7 @@ header {
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
     border: 1px solid rgba(255, 255, 255, 0.22);
+    z-index: 9999;
 }
 
 .hero {
@@ -101,7 +106,6 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    margin-top: 4rem;
     padding: 12px 32px;
     color: #fff;
     font-size: 18px;
@@ -128,4 +132,81 @@ header {
 
 img {
     filter: drop-shadow(0 10px 10px rgba(206, 206, 204, 0.3));
+}
+
+.services {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: #1b1b1b;
+    border: none;
+    border-radius: 25px;
+    margin-top: 20px;
+    padding: 2rem 3rem;
+}
+
+.services h1 {
+    color: #cfc202;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+
+}
+
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.service-card {
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 1rem;
+    background-color: #000000;
+}
+
+.service-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 1rem;
+}
+
+.desc {
+    border: 1px solid gray;
+    border-radius: 25px;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-card {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 32px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #cfc202 0%, #7c7501 100%);
+    text-transform: uppercase;
+    transition: transform .2s, box-shadow .2s, background .2s;
+    border: none;
+    box-shadow: 0 5px 15px rgba(207, 194, 2, 0.3);
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 20px rgba(207, 194, 2, 0.45);
+    background: linear-gradient(90deg, #d6c803 0%, #878301 100%);
+}
+
+.btn-card:active {
+    transform: translateY(-1px);
 }
