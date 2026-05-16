@@ -20,7 +20,6 @@
                     <li><a href="#home" class="active"><i class="fa-solid fa-house"></i></a></li>
                     <li><a href="#services"><i class="fa-solid fa-scissors"></i></a></li>
                     <li><a href="#gallery"><i class="fa-solid fa-image"></i></a></li>
-                    <li><a href="#location"><i class="fa-solid fa-location-dot"></i></a></li>
                     <li><a href="#contact"><i class="fa-solid fa-phone"></i></a></li>
                 </ul>
             </nav>
@@ -202,6 +201,26 @@
             <p>© 2026 Jxrel's Barbershop. All rights reserved.</p>
         </div>
     </footer>
+    <script>
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav ul li a');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                if (window.scrollY >= section.offsetTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
