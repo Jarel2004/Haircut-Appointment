@@ -125,3 +125,7 @@ header {
 .btn-booking:active {
     transform: translateY(-1px);
 }
+
+img {
+    filter: drop-shadow(0 10px 10px rgba(206, 206, 204, 0.3));
+}
