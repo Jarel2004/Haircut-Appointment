@@ -206,6 +206,7 @@ img {
     border-radius: 50px;
     background: linear-gradient(90deg, #cfc202 0%, #7c7501 100%);
     text-transform: uppercase;
+    text-decoration: none;
     transition: transform .2s, box-shadow .2s, background .2s;
     border: none;
     box-shadow: 0 5px 15px rgba(207, 194, 2, 0.3);
@@ -480,6 +481,7 @@ footer {
         border-radius: 30px;
         margin-top: 10px;
         font-weight: 600;
+
     }
 
     /* ── CONTACT ── */
