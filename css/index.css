@@ -19,16 +19,15 @@ nav ul {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    gap: 50px;
+    gap: 20px;
 }
 
 li {
-    font-size: 2em;
+    font-size: 1.5em;
 }
 
 li a {
-    color: #242424;
-    outline: #1f1f1f;
+    color: #ffffff;
     padding: 10px;
 }
 
@@ -46,7 +45,7 @@ header {
     right: 0;
     padding: 10px;
     margin-top: 20px;
-    width: 40%;
+    width: 27%;
     margin: 20px auto;
     background: rgba(255, 255, 255, 0.12);
     border-radius: 35px;
@@ -54,4 +53,49 @@ header {
     backdrop-filter: blur(4.4px);
     -webkit-backdrop-filter: blur(4.4px);
     border: 1px solid rgba(255, 255, 255, 0.22);
+}
+
+.hero {
+    background-color: #0a0a0a;
+    padding: 6rem 1rem;
+    color: #ffffff;
+}
+
+.highlight {
+    color: #cfc202;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.main-title {
+    font-size: 72px;
+    line-height: 1;
+    color: #ffffff;
+    margin: 0 0 16px;
+    letter-spacing: 1px;
+}
+
+.hero-content p {
+    font-size: 20px;
+    color: #8a8a8a;
+    line-height: 1.7;
+    margin: 0 0 28px;
+    max-width: 340px;
+    font-weight: 300;
+}
+
+.btn-booking {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    background: linear-gradient(90deg, #cfc202 0%, #7c7501 100%);
+    text-transform: uppercase;
+    transition: transform .2s;
 }
